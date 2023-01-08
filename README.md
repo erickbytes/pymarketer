@@ -1,7 +1,5 @@
 # pymarketer
-HTTP + spreadsheet tools and utilities
-
-This is a collection of functions for working with data. 
+This is a collection of miscellaneous functions for HTTP + spreadsheet tools and utilities.
 
 Refer to pymarketer_examples.py to see the functions for:
 - show csv basic stats summary
@@ -14,12 +12,13 @@ Refer to pymarketer_examples.py to see the functions for:
 Check out the __init__.py file to see the function implementations.
 
 Additional library dependencies:
-pandas
-numpy
-wordcloud
-ftfy
+- pandas
+- numpy
+- wordcloud
+- ftfy
 
 <pre><code>
+import pymarketer as pm
 # Use a template to make requests http code.
 http_code = pm.http_helper()
 print(f"Generated requests module http code:\n {http_code}")
@@ -33,15 +32,13 @@ r = requests.request(
 # Note: this example is after formatting the generated code with black.
 </code></pre>
 
-<pre><code>
-# Merge multiple Excel tabs into a single dataframe.
+<pre><code># Merge multiple Excel tabs into a single dataframe.
 xl = "Chicago Breweries.xlsx"
 df = pm.merge_tabs(xl)
 df.to_csv("Merged_Tabs.csv")
 </code></pre>
 
-<pre><code>
-# Make a wordcloud from a pandas dataframe.
+<pre><code># Make a wordcloud from a pandas dataframe.
 wordcloud = pm.word_cloud(df)
 wordcloud.to_file("Text Word Cloud Visualization.jpg")
 </code></pre>
