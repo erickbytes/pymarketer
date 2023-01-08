@@ -1,5 +1,8 @@
 # pymarketer
-This is a collection of miscellaneous functions for HTTP + spreadsheet tools and utilities.
+This is a collection of HTTP + spreadsheet tools and utilities.
+
+Try installing this Python library from this repo with pip:
+<pre><code>python -m pip install git+https://github.com/erickbytes/pymarketer.git</code></pre>
 
 Refer to pymarketer_examples.py to see the functions for:
 - show csv basic stats summary
@@ -41,5 +44,3 @@ df.to_csv("Merged_Tabs.csv")
 wordcloud = pm.word_cloud(df)
 wordcloud.to_file("Text Word Cloud Visualization.jpg")
 </code></pre>
-
-This package is ongoing may be pip installable in the future, but for now here it is as source code.
