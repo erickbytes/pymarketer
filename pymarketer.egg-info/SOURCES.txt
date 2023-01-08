@@ -1,0 +1,6 @@
+setup.py
+pymarketer/__init__.py
+pymarketer.egg-info/PKG-INFO
+pymarketer.egg-info/SOURCES.txt
+pymarketer.egg-info/dependency_links.txt
+pymarketer.egg-info/top_level.txt
