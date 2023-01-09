@@ -13,14 +13,12 @@ def http_template():
     print(r.text)
 
     docs: https://requests.readthedocs.io/en/latest/api/#requests.request
-    
-    TODO: fix quotations character bug on Linux OS
     """
     endpoint = input("enter endpoint url, ex. https://yourapi.com/stuff\n")
     method = input("enter method: GET,PATCH,POST,DELETE\n")
     headers = {"Content-Type": "application/json", "Cache-Control": "no-cache"}
     http_code = (
-        f'r = requests.request(url="{endpoint}", method="{method}", headers={headers})'
+        f"r = requests.request(url='{endpoint}', method='{method}', headers={headers})"
     )
     return http_code
 
@@ -29,7 +27,7 @@ def http_auth_template():
     endpoint = input("enter endpoint url, ex. https://yourapi.com/stuff\n")
     method = input("enter method: GET,PATCH,POST,DELETE\n")
     headers = {"Content-Type": "application/json", "Cache-Control": "no-cache"}
-    http_code = f'r = requests.request(url="{endpoint}", method="{method}", headers={headers}, auth=("password","any text"))'
+    http_code = f"r = requests.request(url='{endpoint}', method='{method}', headers={headers}, auth=('password','any text'))"
     return http_code
 
 
