@@ -29,7 +29,6 @@ def analyze_csv(csv):
     # Use chardet to read csv encoding.
     with open(csv, "rb") as fhand:
         csv_type = chardet.detect(fhand.read())
-        print(csv_type)
         encoding = csv_type["encoding"]
     # Use pandas to get row + column stats.
     df = pd.read_csv(csv, encoding=encoding)
@@ -67,7 +66,6 @@ def csv_split(csv):
     then split the dataframe w/ numpy.array_split()."""
     with open(csv, "rb") as fhand:
         csv_type = chardet.detect(fhand.read())
-        print(csv_type)
         encoding = csv_type["encoding"]
     df = pd.read_csv(csv, encoding=encoding)
     split_num = int(input("enter desired number of splits\n"))

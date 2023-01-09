@@ -9,10 +9,9 @@ print(summary)
 http_code = pm.http_helper()
 print(f"Generated requests module http code:\n {http_code}")
 
-# Split csvs equally into dataframes.
+# Split csvs equally into a list of dataframes.
 dfs = pm.csv_split(csv)
-print(len(dfs))
-
+ 
 # Merge a list of csvs into one dataframe.
 csvs = ["Cats.csv","Dogs.csv","Humans.csv"]
 df = pm.csv_merge(csvs)
@@ -20,7 +19,7 @@ df = pm.csv_merge(csvs)
 # Merge multiple Excel tabs into a single dataframe.
 xl = "Chicago Breweries.xlsx"
 df = pm.merge_tabs(xl)
-df.to_csv("Merged_Tabs.csv")
+df.to_csv("Merged Tabs.csv")
 
 # Use ftfy library to smooth data mojibake issues.
 text = "your dirty text"
