@@ -59,3 +59,5 @@ word cloud generation
 wordcloud = pm.word_cloud(df)
 wordcloud.to_file("Text Word Cloud Visualization.jpg")
 </code></pre>
+
+![example python world cloud](https://github.com/erickbytes/pymarketer/blob/main/Text%20Word%20Cloud%20Visualization.jpg)
