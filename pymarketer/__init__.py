@@ -12,7 +12,7 @@ def http_template():
     import requests
     r = requests.request(url=""...
     print(r.text)
-    
+
     docs: https://requests.readthedocs.io/en/latest/api/#requests.request
     """
     endpoint = input("enter endpoint url, ex. https://yourapi.com/stuff\n")
@@ -28,9 +28,7 @@ def http_auth_template():
     endpoint = input("enter endpoint url, ex. https://yourapi.com/stuff\n")
     method = input("enter method: GET,PATCH,POST,DELETE\n")
     headers = {"Content-Type": "application/json", "Cache-Control": "no-cache"}
-    http_code = (
-        f'r = requests.request(url="{endpoint}", method="{method}", headers={headers}, auth=("password","any text"))'
-    )
+    http_code = f'r = requests.request(url="{endpoint}", method="{method}", headers={headers}, auth=("password","any text"))'
     return http_code
 
 
@@ -50,7 +48,7 @@ def analyze_csv(csv):
     # Use pandas to get row + column stats.
     df = pd.read_csv(csv, encoding=encoding)
     rows = df.index.size
-    dupe_rows = rows - df.drop_duplicates().index.size
+    dupe_rows = rows - df.drop_duplicates().reset_index(drop=True).index.size
     summary = f"""
     csv name:   '{csv}'
     encoding:   '{encoding}'
@@ -82,7 +80,7 @@ def csv_merge(csvs):
 def csv_split(csv):
     """Use chardet to read csv encoding,
     then split the dataframe w/ numpy.array_split().
-    
+
     docs:
     https://chardet.readthedocs.io/en/latest/_modules/chardet.html#detect
     https://numpy.org/doc/stable/reference/generated/numpy.array_split.html
