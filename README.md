@@ -15,17 +15,19 @@ Refer to [pymarketer_examples.py](https://github.com/erickbytes/pymarketer/blob/
 Check out the [__init__.py](https://github.com/erickbytes/pymarketer/blob/main/pymarketer/__init__.py) file to see the function implementations.
 
 Additional library dependencies:
-- pandas
-- numpy
-- wordcloud
+- chardet
 - ftfy
+- numpy
+- pandas
+- wordcloud
 
-Install Dependencies
+install dependencies
 
-<pre><code>pip install pandas
-pip install numpy
-pip install wordcloud
+<pre><code>pip install chardet
 pip install ftfy
+pip install numpy
+pip install pandas
+pip install wordcloud
 </code></pre>
 
 http template code generator
@@ -44,7 +46,7 @@ r = requests.request(
 # Note: this example is after formatting the generated code with black.
 </code></pre>
 
-merge xlsx tabs
+merge xlsx excel spreadsheet tabs
 
 <pre><code># Merge multiple Excel tabs into a single dataframe.
 repo = "https://github.com/erickbytes/pymarketer"
