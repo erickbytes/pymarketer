@@ -1,10 +1,10 @@
 # pymarketer
-This is a collection of HTTP + spreadsheet tools and utilities.
+HTTP + spreadsheet tools and utilities
 
 Try installing this Python library from this repo with pip:
 <pre><code>python -m pip install git+https://github.com/erickbytes/pymarketer.git</code></pre>
 
-Refer to pymarketer_examples.py to see the functions for:
+Refer to [pymarketer_examples.py](https://github.com/erickbytes/pymarketer/blob/main/pymarketer_examples.py) to see the functions for:
 - show csv basic stats summary
 - merging + splitting csv files
 - merging the tabs of an xlsx file into a pandas dataframe
@@ -12,7 +12,7 @@ Refer to pymarketer_examples.py to see the functions for:
 - clean text with ftfy
 - make a word cloud visualization from pandas dataframe
 
-Check out the __init__.py file to see the function implementations.
+Check out the [__init__.py](https://github.com/erickbytes/pymarketer/blob/main/pymarketer/__init__.py) file to see the function implementations.
 
 Additional library dependencies:
 - pandas
