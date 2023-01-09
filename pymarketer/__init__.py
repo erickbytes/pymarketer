@@ -6,7 +6,7 @@ import ftfy
 from wordcloud import WordCloud
 
 
-def http_helper():
+def http_template():
     """Accepts http request info, formats as generic requests code.
     This request can be called:
     import requests
