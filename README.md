@@ -34,9 +34,15 @@ basic csv analysis summary
 
 <pre><code>import pymarketer as pm
 # Get basic stats about your csv.
-csv = "https://raw.githubusercontent.com/erickbytes/pymarketer/main/Stars.csv"
+csv = "Stars.csv"
 summary = pm.analyze_csv(csv)
 print(summary)
+>>>
+    csv name:   'Stars.csv'
+    encoding:   'ascii'
+    rows:       8
+    columns:    2
+    duplicates: 0
 </code></pre>
 
 http template code generator
