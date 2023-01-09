@@ -14,6 +14,8 @@ def http_template():
     print(r.text)
 
     docs: https://requests.readthedocs.io/en/latest/api/#requests.request
+    
+    TODO: fix quotations character bug on Linux OS
     """
     endpoint = input("enter endpoint url, ex. https://yourapi.com/stuff\n")
     method = input("enter method: GET,PATCH,POST,DELETE\n")

@@ -1,3 +1,5 @@
+LICENSE
+README.md
 setup.py
 pymarketer/__init__.py
 pymarketer.egg-info/PKG-INFO

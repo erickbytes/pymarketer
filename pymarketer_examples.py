@@ -1,7 +1,7 @@
 import pymarketer as pm
 
 # Get basic stats about your csv.
-csv = "Stars.csv"
+csv = "https://raw.githubusercontent.com/erickbytes/pymarketer/main/Stars.csv"
 summary = pm.analyze_csv(csv)
 print(summary)
 
@@ -17,7 +17,8 @@ csvs = ["Cats.csv","Dogs.csv","Humans.csv"]
 df = pm.csv_merge(csvs)
 
 # Merge multiple Excel tabs into a single dataframe.
-xl = "Chicago Breweries.xlsx"
+repo = "https://github.com/erickbytes/pymarketer"
+xl = f"{repo}/blob/main/Chicago%20Breweries.xlsx?raw=true"
 df = pm.merge_tabs(xl)
 df.to_csv("Merged Tabs.csv")
 
