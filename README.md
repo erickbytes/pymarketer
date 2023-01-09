@@ -30,9 +30,18 @@ pip install pandas
 pip install wordcloud
 </code></pre>
 
-http template code generator
+basic csv analysis summary
 
 <pre><code>import pymarketer as pm
+# Get basic stats about your csv.
+csv = "https://raw.githubusercontent.com/erickbytes/pymarketer/main/Stars.csv"
+summary = pm.analyze_csv(csv)
+print(summary)
+</code></pre>
+
+http template code generator
+
+<pre><code>
 # Use a template to make requests http code.
 http_code = pm.http_template()
 print(f"Generated requests module http code:\n {http_code}")
