@@ -22,7 +22,7 @@ Additional library dependencies:
 
 <pre><code>import pymarketer as pm
 # Use a template to make requests http code.
-http_code = pm.http_helper()
+http_code = pm.http_template()
 print(f"Generated requests module http code:\n {http_code}")
 >>>
 Generated requests module http code:
