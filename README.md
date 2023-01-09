@@ -20,6 +20,12 @@ Additional library dependencies:
 - wordcloud
 - ftfy
 
+<pre><code>pip install pandas
+pip install numpy
+pip install wordcloud
+pip install ftfy
+</code></pre>
+
 <pre><code>import pymarketer as pm
 # Use a template to make requests http code.
 http_code = pm.http_template()
@@ -37,7 +43,7 @@ r = requests.request(
 <pre><code># Merge multiple Excel tabs into a single dataframe.
 xl = "Chicago Breweries.xlsx"
 df = pm.merge_tabs(xl)
-df.to_csv("Merged_Tabs.csv")
+df.to_csv("Merged Tabs.csv", index=False)
 </code></pre>
 
 <pre><code># Make a wordcloud from a pandas dataframe.

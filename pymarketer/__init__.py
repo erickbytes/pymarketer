@@ -24,6 +24,16 @@ def http_template():
     return http_code
 
 
+def http_auth_template():
+    endpoint = input("enter endpoint url, ex. https://yourapi.com/stuff\n")
+    method = input("enter method: GET,PATCH,POST,DELETE\n")
+    headers = {"Content-Type": "application/json", "Cache-Control": "no-cache"}
+    http_code = (
+        f'r = requests.request(url="{endpoint}", method="{method}", headers={headers}, auth=("password","any text"))'
+    )
+    return http_code
+
+
 def analyze_csv(csv):
     """
     Display basic csv attributes.
