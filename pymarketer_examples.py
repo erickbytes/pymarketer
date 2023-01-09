@@ -1,7 +1,7 @@
 import pymarketer as pm
 
 # Get basic stats about your csv.
-csv = "https://raw.githubusercontent.com/erickbytes/pymarketer/main/Stars.csv"
+csv = "Stars.csv"
 summary = pm.analyze_csv(csv)
 print(summary)
 
