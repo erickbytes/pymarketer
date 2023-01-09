@@ -1,7 +1,7 @@
 # pymarketer
 HTTP + spreadsheet tools and utilities
 
-Try installing this Python library from this repo with pip:
+Install this Python library from this repo with pip:
 <pre><code>python -m pip install git+https://github.com/erickbytes/pymarketer.git</code></pre>
 
 Refer to [pymarketer_examples.py](https://github.com/erickbytes/pymarketer/blob/main/pymarketer_examples.py) to see the functions for:
@@ -20,11 +20,15 @@ Additional library dependencies:
 - wordcloud
 - ftfy
 
+Install Dependencies
+
 <pre><code>pip install pandas
 pip install numpy
 pip install wordcloud
 pip install ftfy
 </code></pre>
+
+http template code generator
 
 <pre><code>import pymarketer as pm
 # Use a template to make requests http code.
@@ -40,11 +44,16 @@ r = requests.request(
 # Note: this example is after formatting the generated code with black.
 </code></pre>
 
+merge xlsx tabs
+
 <pre><code># Merge multiple Excel tabs into a single dataframe.
-xl = "Chicago Breweries.xlsx"
+repo = "https://github.com/erickbytes/pymarketer"
+xl = f"{repo}/blob/main/Chicago%20Breweries.xlsx?raw=true"
 df = pm.merge_tabs(xl)
 df.to_csv("Merged Tabs.csv", index=False)
 </code></pre>
+
+word cloud generation
 
 <pre><code># Make a wordcloud from a pandas dataframe.
 wordcloud = pm.word_cloud(df)
