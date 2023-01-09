@@ -1,5 +1,5 @@
 # pymarketer
-HTTP + spreadsheet tools and utilities
+An HTTP + spreadsheet toolset
 
 Install this Python library from this repo with pip:
 <pre><code>python -m pip install git+https://github.com/erickbytes/pymarketer.git</code></pre>
