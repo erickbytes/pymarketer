@@ -21,7 +21,7 @@ Additional library dependencies:
 - pandas
 - wordcloud
 
-install dependencies
+install python dependencies
 
 <pre><code>pip install chardet
 pip install ftfy
@@ -37,8 +37,7 @@ basic csv analysis summary
 csv = "Stars.csv"
 summary = pm.analyze_csv(csv)
 print(summary)
->>>
-    csv name:   'Stars.csv'
+>>> csv name:   'Stars.csv'
     encoding:   'ascii'
     rows:       8
     columns:    2
@@ -47,12 +46,10 @@ print(summary)
 
 http template code generator
 
-<pre><code>
-# Use a template to make requests http code.
+<pre><code># Use a template to make requests http code.
 http_code = pm.http_template()
 print(f"Generated requests module http code:\n {http_code}")
->>>
-Generated requests module http code:
+>>> Generated requests module http code:
 r = requests.request(
     url="https://yourapi.com/stuff?drink=tea",
     method="GET",
