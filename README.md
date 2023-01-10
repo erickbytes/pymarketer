@@ -37,10 +37,9 @@ print(summary)
     duplicates: 0
 </code></pre>
 
-http template code generator
+requests http template code generator
 
-<pre><code># Use a template to make requests http code.
-http_code = pm.http_template()
+<pre><code>http_code = pm.http_template()
 print(f"Generated requests module http code:\n {http_code}")
 >>> Generated requests module http code:
 r = requests.request(
@@ -68,3 +67,11 @@ wordcloud.to_file("Text Word Cloud Visualization.jpg")
 </code></pre>
 
 ![example python world cloud](https://github.com/erickbytes/pymarketer/blob/main/Text%20Word%20Cloud%20Visualization.jpg)
+
+additional recommended python libraries
+- ruff: linter
+- black: code formatter
+- sqlfluff: SQL linter
+- pelican: static site generator
+- pyautogui: user interface automation
+- pytrends: search engine research
