@@ -4,6 +4,15 @@ An HTTP + spreadsheet toolset
 Install this Python library from this repo with pip:
 <pre><code>python -m pip install git+https://github.com/erickbytes/pymarketer.git</code></pre>
 
+Install Python library dependencies
+
+<pre><code>pip install chardet
+pip install ftfy
+pip install numpy
+pip install pandas
+pip install wordcloud
+</code></pre>
+
 Refer to [pymarketer_examples.py](https://github.com/erickbytes/pymarketer/blob/main/pymarketer_examples.py) to see the functions for:
 - show csv basic stats summary
 - merging + splitting csv files
@@ -13,22 +22,6 @@ Refer to [pymarketer_examples.py](https://github.com/erickbytes/pymarketer/blob/
 - make a word cloud visualization from pandas dataframe
 
 Check out the [__init__.py](https://github.com/erickbytes/pymarketer/blob/main/pymarketer/__init__.py) file to see the function implementations.
-
-Additional library dependencies:
-- chardet
-- ftfy
-- numpy
-- pandas
-- wordcloud
-
-install python dependencies
-
-<pre><code>pip install chardet
-pip install ftfy
-pip install numpy
-pip install pandas
-pip install wordcloud
-</code></pre>
 
 basic csv analysis summary
 
